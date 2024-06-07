@@ -75,7 +75,6 @@ default-engine = [
   "parquet/async",
   "parquet/object_store",
   "reqwest",
-  "tokio",
 ]
 
 developer-visibility = []
