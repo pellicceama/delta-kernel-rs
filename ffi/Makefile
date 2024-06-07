@@ -1,7 +1,7 @@
 BINARY=cffi-test
 SOURCES=cffi-test.c
 INCPATHS=../target/ffi-headers
-LIBPATHS=../target/debug
+LIBPATHS=../target/release
 LDFLAGS=-ldelta_kernel_ffi #`pkg-config --libs arrow-glib`
 CFLAGS=-c -Wall -DDEFINE_DEFAULT_ENGINE -DDEFINE_SYNC_ENGINE #`pkg-config --cflags arrow-glib`
 CC=gcc
