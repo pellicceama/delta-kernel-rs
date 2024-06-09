@@ -37,7 +37,7 @@ jobs:
           toolchain: stable
           target: wasm32-unknown-emscripten
           override: true
-      - uses: Swatinem/rust-cache@v2
+      #- uses: Swatinem/rust-cache@v2
       - name: build and lint with clippy
         run: cargo clippy --tests -- -D warnings
       - name: list stuff
