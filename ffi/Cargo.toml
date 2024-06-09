@@ -15,6 +15,7 @@ crate-type = ["lib", "cdylib", "staticlib"]
 [dependencies]
 tracing = "0.1"
 url = "2"
+tokio = {version = "1", features = ["full"]}
 delta_kernel = { path = "../kernel", default-features = false, features = [
   "developer-visibility",
 ] }
