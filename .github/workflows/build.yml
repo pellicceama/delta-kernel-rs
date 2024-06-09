@@ -39,7 +39,7 @@ jobs:
           override: true
       - uses: Swatinem/rust-cache@v2
       - name: build and lint with clippy
-        run: cargo clippy --tests -- -D warnings --features "tokio,js"
+        run: cargo clippy --tests --features "tokio,js" -- -D warnings
       - name: lint without default features
         run: cargo clippy --no-default-features -- -D warnings
   test:
