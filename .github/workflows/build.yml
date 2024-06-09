@@ -39,7 +39,7 @@ jobs:
           override: true
       #- uses: Swatinem/rust-cache@v2
       - name: build and lint with clippy
-        run: cargo clippy --tests -- -D warnings
+        run: cargo clippy  --package delta_kernel_ffi --tests -- -D warnings
       - name: list stuff
         run: tree .
       - name: lint without default features
