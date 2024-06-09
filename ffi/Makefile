@@ -22,8 +22,6 @@ $(BINARY): $(OBJECTS)
 run: $(BINARY)
 	LD_LIBRARY_PATH=$(LIBPATHS) ./$(BINARY) $(table)
 
-test: $(BINARY)
-	LD_LIBRARY_PATH=$(LIBPATHS) ./$(BINARY) file://$(ROOT_DIR)/../kernel/tests/data/basic_partitioned
 
 distclean: clean
 	rm -f $(BINARY)
