@@ -19,6 +19,7 @@ delta_kernel = { path = "../kernel", default-features = false, features = [
   "developer-visibility",
 ] }
 delta_kernel_ffi_macros = { path = "../ffi-proc-macros", version = "0.1.0" }
+getrandom = { version = "0.2", features = ["js"] }
 
 # used if we use the default engine to be able to move arrow data into the c-ffi format
 arrow-schema = { version = "^51.0", default-features = false, features = [

@@ -14,6 +14,7 @@ all-features = true
 
 [dependencies]
 bytes = "1.4"
+getrandom = { version = "0.2", features = ["js"] }
 chrono = { version = "0.4" }
 either = "1.8"
 fix-hidden-lifetime-bug = "0.2"
