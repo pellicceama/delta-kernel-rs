@@ -37,7 +37,14 @@ jobs:
           override: true
       #- uses: Swatinem/rust-cache@v2
       - name: build and lint with clippy
-        run: cargo build  --package delta_kernel_ffi
+        run: cargo build  --package delta_kernel_ffi --release
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: my_artifacts
+          path: |
+            **/libdelta_kernel_ffi.a
+
       - name: list stuff
         run: tree .
       - name: lint without default features
