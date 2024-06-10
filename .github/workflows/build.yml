@@ -37,7 +37,7 @@ jobs:
           override: true
       #- uses: Swatinem/rust-cache@v2
       - name: build and lint with clippy
-        run: cargo build  --package delta_kernel_ffi --release
+        run: wasm-pack build --target web --package delta_kernel_ffi --release
 
       - uses: actions/upload-artifact@v2
         with:
