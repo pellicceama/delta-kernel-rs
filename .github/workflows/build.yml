@@ -37,7 +37,9 @@ jobs:
           override: true
       #- uses: Swatinem/rust-cache@v2
       - name: build and lint with clippy
-        run: cargo install wasm-pack && wasm-pack build --target web --package delta_kernel_ffi --release
+        run: |
+          curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+          wasm-pack build --target web --package delta_kernel_ffi --release
 
       - uses: actions/upload-artifact@v2
         with:
