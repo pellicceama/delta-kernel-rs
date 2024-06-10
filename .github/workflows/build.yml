@@ -43,7 +43,7 @@ jobs:
         with:
           name: my_artifacts
           path: |
-            **/libdelta_kernel_ffi.a
+            target
 
       - name: list stuff
         run: tree .
